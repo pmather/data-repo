@@ -18,3 +18,8 @@ before_script:
   - RAILS_ENV=test bundle exec rake jetty:clean
   - RAILS_ENV=test bundle exec rake sufia:jetty:config
   - RAILS_ENV=test bundle exec rake jetty:start
+addons:
+  apt:
+    packages:
+    - zlib1g-dev
+    - libarchive-dev
