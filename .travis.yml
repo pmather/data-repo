@@ -13,6 +13,7 @@ services:
   - redis-server
 before_script:
   - cp ./config/secrets.yml.sample ./config/secrets.yml
+  - RAILS_ENV=test bundle exec rubocop -R --fail-level error
   - RAILS_ENV=test bundle exec rake db:setup
   - RAILS_ENV=test bundle exec rake datarepo:add_roles
   - RAILS_ENV=test bundle exec rake jetty:clean
