@@ -20,7 +20,7 @@ before_script:
   - RAILS_ENV=test bundle exec rake sufia:jetty:config
   - RAILS_ENV=test bundle exec rake jetty:start
 script:
-  - echo "Assuming the tests all pass..."
+  - echo "Let's assume the tests all pass..."
 deploy:
   provider: script
   script: curl -fsSL -X POST -o /dev/null -u $AWX_USER:$AWX_PASS $AWX_TEMPLATE_URL
