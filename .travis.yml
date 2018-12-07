@@ -1,7 +1,6 @@
 language: ruby
 bundler_args: --without development production
 cache: bundler
-sudo: false
 rvm:
   - 2.3
 jdk:
