@@ -1,4 +1,4 @@
-dist: xenial
+dist: trusty
 language: ruby
 bundler_args: --without development production
 cache: bundler
